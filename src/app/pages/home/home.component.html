@@ -1,0 +1,14 @@
+<div class="jumbotron">
+    <h1 class="display-4">Soporte CCN</h1>
+    <p class="lead">Bienvenido a Soporte CCN de Megacable.</p>
+    <hr class="my-4">
+    <p>Esta nueva p lataforma esta creada en Angular 8.</p>
+    <h5 class="card-title">{{ servicio }}</h5>
+    <a class="btn btn-primary btn-lg" (click)="cambiarServicio()" role="button">Iniciar</a>    
+</div>
+<hr class="my-4">
+<div>
+    <app-hijo 
+        [servicioHijo] = "servicio" 
+        (cambioServicioHijo) = "servicio = $event"></app-hijo>
+</div>
